@@ -32,6 +32,9 @@ public:
             perror("socket error");
             return false;
         }
+        //地址复用
+        int i = 1;
+        setsockopt(_sock,SOL_SOCKET,SO_REUSEADDR,&i,sizeof(int));
         return true;
     }
 

@@ -31,8 +31,8 @@ int main(int argc,char* argv[])
         tcp.Send(buf);
         
         //等待接收数据
-        tcp.Recv(buf);
-        cout<<"服务端说 ： "<<buf<<endl;
+        //tcp.Recv(buf);
+        //cout<<"服务端说 ： "<<buf<<endl;
     }
     tcp.Close();
 
